@@ -4,6 +4,42 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop02 World!");
+       Console.WriteLine("Welcome to BYU Calculator Grade");
+       Console.WriteLine("What is the grade percentage? ");
+       string answer = Console.ReadLine();
+       int percentage = int.Parse(answer);
+
+        string letter = "";
+
+        if (percentage >= 90)
+        {
+            letter = "A";
+        }
+        else if (percentage >= 80)
+        {
+            letter = "B";
+        }
+        else if (percentage >= 70)
+        {
+            letter = "C";
+        }
+        else if (percentage >= 60)
+        {
+            letter = "D";
+        }
+        else
+        {
+            letter = "F";
+        }
+
+        Console.WriteLine($" Your  Grade is {letter}");
+        if (percentage >= 70)
+        {
+            Console.WriteLine("You passed!");
+        }
+        else
+        {
+            Console.WriteLine($"Better luck next time Need to improve!!{letter}");
+        }
     }
 }
