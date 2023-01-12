@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hellow Sand Box");
+        Random randomGenerator = new Random();
+        int number = randomGenerator.Next(1, 11);
     }
 }
