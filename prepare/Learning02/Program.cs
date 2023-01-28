@@ -22,6 +22,12 @@ class Program
         job3._company = "Upwork / Freelance";
         job3._startYear = 2019;
         job3._endYear = 2022;
+
+        Job job4 = new Job();
+        job4._jobTitle = "Technical Support";
+        job4._company = "Upwork / Freelance";
+        job4._startYear = 2029;
+        job4._endYear = 2032;
         
         //Credentials
         Credentials credentials1 = new Credentials();
@@ -65,6 +71,7 @@ class Program
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
         myResume._jobs.Add(job3);
+        myResume._jobs.Add(job4);
 
         //Display Credentials
         myResume.__credentials.Add(credentials1);

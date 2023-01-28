@@ -4,6 +4,8 @@ public class Resume
 {
     //Global Variable
     public string _name;
+
+
     public string _gender;
     public string _Address;
 
