@@ -1,6 +1,5 @@
 using System;
-// as a stretch, I tried to keep a log fo how many times activities were performed. 
-// I tried to make sure that there were no prompts repeated. 
+
 
 class Program
 {
