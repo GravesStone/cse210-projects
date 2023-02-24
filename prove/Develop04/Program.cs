@@ -9,13 +9,13 @@ class Program
         int reflectCount = 0;
         int listCount = 0;
 
-        // Console.WriteLine("Hello Develop04 World!");
+        
         Console.WriteLine("Welcome to the Mindfulness Program!");
         Console.WriteLine();
         bool running = true;
         while (running)
         {
-            Console.WriteLine("Please select one of the following activities: ");
+            Console.WriteLine("Menu Options");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflecting Activity");
             Console.WriteLine("3. Listing Activity");
