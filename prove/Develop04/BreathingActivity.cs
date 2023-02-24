@@ -29,9 +29,8 @@ public class BreathingActivity : Activity
         {
             Console.Write("Breathe in... ");
             CountUp();
-            Console.WriteLine();
             
-            Console.Write("Breathe out... "); 
+            Console.Write("Now breathe out... "); 
             Countdown();
             Console.WriteLine();
         }
