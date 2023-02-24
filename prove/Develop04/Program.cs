@@ -5,23 +5,26 @@ class Program
 {
     static void Main(string[] args)
     {
+        DateTime Timex = DateTime.Now;
         int breatheCount = 0;
         int reflectCount = 0;
         int listCount = 0;
-
+        Console.Clear();
         
         Console.WriteLine("Welcome to the Mindfulness Program!");
         Console.WriteLine();
         bool running = true;
         while (running)
-        {
+        {   
+            Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy HH:mm:ss"));
             Console.WriteLine("Menu Options");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflecting Activity");
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Quit");
             Console.WriteLine();
-            Console.Write("What would you like to do? ");
+            Console.WriteLine("Select a choice from menu:");
+            Console.Write("> ");
             int choice = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
@@ -51,12 +54,13 @@ class Program
                 //quit
                 case 4:
                     running = false;
+                    Console.WriteLine("-------Result--------");
                     Console.WriteLine("Great job! You completed the following activities: ");
                     Console.WriteLine($"Breathing Activity: {breatheCount} times");
                     Console.WriteLine($"Reflecting Activity: {reflectCount} times");
                     Console.WriteLine($"Listing Activity: {listCount} times");
                     Console.WriteLine();
-                    Console.WriteLine("Thank you. Have a nice day!");
+                    Console.WriteLine("Thank you! Good bye!");
                     break;
                 default:
                     Console.WriteLine("Invalid input. Please choose one of the following activities.");
