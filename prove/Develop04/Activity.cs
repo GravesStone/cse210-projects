@@ -47,6 +47,7 @@ public class Activity
 
         Console.WriteLine();
         Console.WriteLine("Well done!");
+        Console.Write("Please Wait. . .");
         DisplaySpinner(3);
         Console.WriteLine();
         Console.WriteLine(_endingMessage);
@@ -88,13 +89,15 @@ public class Activity
 
     public void DisplayGetSessionLength()
     {
-        Console.Write("How long, in seconds, would you like for your session? ");
+        Console.WriteLine("How long, in seconds, would you like for your session? ");
+        Console.Write("> ");
         _userSessionLengthInput = int.Parse(Console.ReadLine());
     }
 
     public void DisplayGetReady()
     {
         Console.WriteLine("Get ready...");
+        Console.Write("Loading...");
         DisplaySpinner(5);
     }
 
