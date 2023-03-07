@@ -10,14 +10,14 @@ class SaveLoadCSV
     public static List<String> LoadFromCSV(string _filePath)
     {
         List<string> fromCSV = new List<string>();
-        StreamReader streamReader = new StreamReader(_filePath);
+        StreamReader ReaderMenu= new StreamReader(_filePath);
         
-        while (!streamReader.EndOfStream)
+        while (!ReaderMenu.EndOfStream)
         {
-            string line = streamReader.ReadLine();
+            string line = ReaderMenu.ReadLine();
             fromCSV.Add(line.ToString());
         }   
-        streamReader.Close();
+        ReaderMenu.Close();
 
         return fromCSV;
     }   
