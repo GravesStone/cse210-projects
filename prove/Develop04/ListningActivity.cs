@@ -40,7 +40,7 @@ public class ListingActivity : Activity
 
     private void ListingCounter()
     {
-         DateTime startTime = DateTime.Now;
+        DateTime startTime = DateTime.Now;
         DateTime futureTime = startTime.AddSeconds(GetUserSessionLengthInput());
         DateTime currentTime = DateTime.Now;
         int count = 0;

@@ -9,25 +9,32 @@ class Program
         int reflectCount = 0;
         int listCount = 0;
 
-        // Console.WriteLine("Hello Develop04 World!");
-        Console.WriteLine("Welcome to the Mindfulness Program!");
+       for (int i = 0; i < 1; i++)
+        {
+            Console.WriteLine("Welcome to the Mindfulness Program!");
+            Thread.Sleep(2000);
+        }
+        Console.Clear();
+        
+        
         Console.WriteLine();
         bool running = true;
         while (running)
         {
-            Console.WriteLine("Please select one of the following activities: ");
+            Console.WriteLine("Menu Options: ");
             Console.WriteLine("1. Breathing Activity");
             Console.WriteLine("2. Reflecting Activity");
             Console.WriteLine("3. Listing Activity");
             Console.WriteLine("4. Quit");
             Console.WriteLine();
-            Console.Write("What would you like to do? ");
+            Console.WriteLine("Select a choice from the menu");
+            Console.Write("> ");
             int choice = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
             switch (choice)
             {   
-                //Breathing
+                //Breathing Activity
                 case 1:
                     Console.Clear();
                     BreathingActivity breathing = new BreathingActivity();
