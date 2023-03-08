@@ -8,7 +8,9 @@ class Program
         int userMainMenuSelection = 0;
 
         Console.Clear();
-        Console.WriteLine("Welcome to the Goal Tracking !");
+        Console.WriteLine("Welcome to the Goal Tracker !");
+          DateTime Timex = DateTime.Now;
+           Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy"));
         Console.WriteLine();
 
         while (userMainMenuSelection != 6)
