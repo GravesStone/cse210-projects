@@ -46,6 +46,10 @@ class AllGoals
         }
     
         Console.WriteLine("Please enter the filename you want to save: ");
+        Console.WriteLine("Select file esample format ");
+        Console.WriteLine("(Filename).txt for text");
+        Console.WriteLine("(Filename).csv for csv");
+        Console.Write("> ");
         _fileName = Console.ReadLine();
         string fileToSave = _fileName;
         List<string> saveGoals = new List<string>();
@@ -99,7 +103,7 @@ class AllGoals
         Console.WriteLine("The Goals are:");
         foreach (Goal goal in _allGoals)
         {
-            Console.WriteLine(string.Format($"{_allGoals.IndexOf(goal) + 1}. [{((goal.GetGoalStatus() == false) ? " " : "x")}] {goal.GetGoalName()}"));
+            Console.WriteLine(string.Format($"{_allGoals.IndexOf(goal) + 1}. [{((goal.GetGoalStatus() == false) ? " " : " ✓ ")}] {goal.GetGoalName()}"));
         }
         Console.Write("Which goal did you complete? ");
         int recordEvent = int.Parse(Console.ReadLine()) - 1;

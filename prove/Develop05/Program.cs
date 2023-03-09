@@ -4,22 +4,26 @@ class Program
 {
     static void Main(string[] args)
     {
+     
         AllGoals allGoals = new AllGoals();
         int userMainMenuSelection = 0;
+        
 
         Console.Clear();
-        Console.WriteLine("Welcome to the Goal Tracker !");
-          DateTime Timex = DateTime.Now;
-           Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy"));
+
         Console.WriteLine();
+        Console.WriteLine("Welcome to the Goal Tracker !");
+        DateTime Timex = DateTime.Now;
+        Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy"));
 
         while (userMainMenuSelection != 6)
         {
             Menu menu = new Menu();
-            allGoals.DisplayPoints(allGoals.getTotalPoints());
-            Console.WriteLine();
+            
+          
             menu.DisplayMainMenu();
             userMainMenuSelection = int.Parse(Console.ReadLine());
+            allGoals.DisplayPoints(allGoals.getTotalPoints());
             Console.Clear();
 
             switch (userMainMenuSelection)
@@ -74,12 +78,13 @@ class Program
                     break;
 
                 case 6:
-                    Console.WriteLine("Thank you! Goodbye. ");
+                    Console.WriteLine("Thank you! Have a great day!!! ");
                     break;
+                
 
                 default:
-                    Console.WriteLine("Please select a valid option.");
-                    break;
+                    Console.WriteLine("Error Input !!!");
+                    Console.WriteLine("Choose to the Menu Option");                    break;
 
             }
             

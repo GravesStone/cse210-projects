@@ -8,6 +8,8 @@ public class Menu
 
     public Menu()
     {
+       
+    
         _mainMenu = new List<string>
         {
             "Menu Options:",
@@ -35,7 +37,9 @@ public class Menu
             Console.WriteLine(menuItem);
         }
 
-        Console.Write("Select a choice: ");
+        Console.WriteLine("Select a choice: ");
+        Console.Write("> ");
+    
        
     }
 
@@ -45,7 +49,8 @@ public class Menu
         {
             Console.WriteLine(menuItem);
         }
-        Console.Write("Select a choice from the menu: ");
+        Console.WriteLine("Select a choice from the menu: ");
+        Console.Write("> ");
     }
 
 }
