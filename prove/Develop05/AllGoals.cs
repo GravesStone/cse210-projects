@@ -46,7 +46,7 @@ class AllGoals
         }
     
         Console.WriteLine("Please enter the filename you want to save: ");
-        Console.WriteLine("Select file esample format ");
+        Console.WriteLine("Select file sample format ");
         Console.WriteLine("(Filename).txt for text");
         Console.WriteLine("(Filename).csv for csv");
         Console.Write("> ");
