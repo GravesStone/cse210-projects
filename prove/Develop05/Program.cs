@@ -15,7 +15,6 @@ class Program
         Console.WriteLine("Welcome to the Goal Tracker !");
         DateTime Timex = DateTime.Now;
         Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy"));
-
         while (userMainMenuSelection != 6)
         {
             Menu menu = new Menu();
