@@ -15,7 +15,6 @@ class Program
         Console.WriteLine("Welcome to the Goal Tracker !");
         DateTime Timex = DateTime.Now;
         Console.WriteLine(Timex.ToString("dddd, dd MMMM yyyy"));
-
         while (userMainMenuSelection != 6)
         {
             Menu menu = new Menu();
@@ -28,6 +27,7 @@ class Program
 
             switch (userMainMenuSelection)
             {
+                //Menu Selection
                 case 1:
                     menu.DisplayNewGoalMenu();
                     int userNewGoalSelection = int.Parse(Console.ReadLine());
@@ -60,28 +60,27 @@ class Program
                         allGoals.addGoal(goal);
                     }
                     break;
-
+                //Display Goals
                 case 2:
                     allGoals.DisplayGoals();
                     break;
-
+                //Save File
                 case 3:
                     allGoals.SaveGoals();
                     break;
-
+                //Load Section
                 case 4:
                     allGoals.LoadGoals();
                     break;
-
+              //Goal History
                 case 5:
                     allGoals.DisplayGoalRecordEvent();
                     break;
-
+                //End Program
                 case 6:
                     Console.WriteLine("Thank you! Have a great day!!! ");
                     break;
-                
-
+                //Error Message
                 default:
                     Console.WriteLine("Error Input !!!");
                     Console.WriteLine("Choose to the Menu Option");                    break;

@@ -42,7 +42,7 @@ class SimpleGoal : Goal
 
     public override void RecordEvent()
     {
-        Console.WriteLine($"Congratulations! You have earned {GetGoalPoints()} points!");
+        Console.WriteLine($"Congratulations!  You have earned {GetGoalPoints()} points!");
         _goalComplete = true;
     }
 }
