@@ -8,5 +8,6 @@ public class Comments
     public void DisplayComment()
     {
         Console.WriteLine($" {_YoutubeUser}: {_commentTxt}");
+        Console.WriteLine("---------------------------");
     }
 }
