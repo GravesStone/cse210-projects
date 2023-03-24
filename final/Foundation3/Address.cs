@@ -2,7 +2,7 @@ using System;
 
 public class Address
 {
-    private string _streetAddress {get; set;}
+    private string _InforAddress {get; set;}
     private string _city {get; set;}
     private string _state {get; set;}
     private string _postalCode {get; set;}
@@ -10,7 +10,7 @@ public class Address
 
     public Address (string streetAddress, string city, string state, string postalCode, string country)
     {
-        _streetAddress = streetAddress;
+        _InforAddress = streetAddress;
         _city = city;
         _state = state;
         _postalCode = postalCode;
@@ -19,6 +19,6 @@ public class Address
 
     public string GetAddress()
     {
-        return $"{_streetAddress}, {_city}, {_state} {_postalCode} {_country}";
+        return $"{_InforAddress}, {_city}, {_state} {_postalCode} {_country}";
     }
 }

@@ -4,12 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Address address1 = new Address ("Avenida Dom João II", "Lisbon", "Lisbon", "1990-365", "Portugal");
+        //Column 1
+        Address address1 = new Address ("Tandang Sora", "Metro Manila", "Quezon City", "1990-365", "Philippines");
         string lectureAddress = address1.GetAddress();
-        Lectures lecture = new Lectures("Stake Conference", "Church meeting with members of the Almada Stake.", "March 5, 2023", "10:00 am - 12:00 pm", $"{lectureAddress}", "Lecture", "Elder Pokhylko", 400);
+        Lectures lecture = new Lectures("Stake Conference", "Church meeting with Elder Wakolo.", "June,20 2019", "10:00 am - 12:00 pm", $"{lectureAddress}", "Lecture", "Elder Rice", 400);
 
-        //display lecture event details
-        Console.WriteLine("---------------------------------------------------------------------------");
+        //Information Lecture
+        Console.WriteLine("--------------------------Information---------------------------------------------");
         lecture.DisplayShortDescription();
         Console.WriteLine();
         lecture.DisplayStandardDetails();
@@ -17,11 +18,11 @@ class Program
         lecture.DisplayLectureFullDetails();
 
 
-        Address address2 = new Address ("Estr. Q.ta do Torneiro", "Lisbon", "Lisbon", "2700-144", "Portugal");
+        Address address2 = new Address ("Manila Temple", "White Plains", "Quezon City", "1107-224", "Philippines");
         string receptionAddress = address2.GetAddress();
-        Receptions reception = new Receptions("Marta and Renato", "Marta and Renato's wedding ceremony and reception", "September 2, 2022", "4:00 pm - 12:00am", $"{receptionAddress}", "Reception", "mandr@gmail.com");
+        Receptions reception = new Receptions("Mark and Patricia", "Mark and Patricia's wedding ceremony and reception", "July 2, 2024", "4:00 pm - 12:00am", $"{receptionAddress}", "Reception", "MarkE@gmail.com");
         //display reception event details
-        Console.WriteLine("---------------------------------------------------------------------------");
+        Console.WriteLine("------------------------------------Venue----------------------------------");
         reception.DisplayShortDescription();
         Console.WriteLine();
         reception.DisplayStandardDetails();
@@ -29,9 +30,9 @@ class Program
         reception.DisplayReceptionsFullDetails();
 
 
-        Address address3 = new Address ("5200 Emerald Pkwy", "Dublin", "OH", "43017", "USA");
+        Address address3 = new Address ("Quezon City Stake", "Manila", "QC", "43017", "Philppines");
         string outdoorAddress = address3.GetAddress();
-        Outdoor outdoor = new Outdoor("YM & YM Activity", "Sports night at the park for all youth.", "February 28, 2023", "6:00 pm", $"{outdoorAddress}", "Outdoor", "Sunny");
+        Outdoor outdoor = new Outdoor("Sport Fest YM & YW", "Sports in the summer activity.", "February 10, 2023", "8:00Am - 12:00nn", $"{outdoorAddress}", "Outdoor", "Sunny");
         //display outdoor event details
         Console.WriteLine("---------------------------------------------------------------------------");
         
